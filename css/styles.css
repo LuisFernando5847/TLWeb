@@ -1,0 +1,152 @@
+html {
+    font-family: var(--letra-general); /* Tipo de letra para toda la pagina*/
+    font-style: var(--estilo-de-letra); /* Estilo de letra para toda la pagina */
+}
+
+body {
+    background-color: var(--color-fondo-blanco); /* Color de fondo blanco */
+    margin: 0; /* Elimina el margen por defecto del navegador */
+}
+:root{
+    --color-verde-claro: #7ad67e;
+    --color-verde-oscuro: #4caf50;
+    --color-fondo-blanco: #fff;
+    --color-gris-oscuro: #333;
+    --color-azul-oscuro: #283665;
+    --color-negro: #000;
+    --color-gris-claro: #a1a4c2;
+    --letra-general: "Roboto", sans-serif;
+    --tamaño-letra-h1: 2.5rem;
+    --estilo-de-letra: normal;
+}
+
+
+/*** --- ESTILOS PARA EL NAVBAR --- ***/
+.tl-navbar {
+    background-color:#a3a3a3 !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.navbar .container .navbar-link .image-nav {
+    width: 160px; /* Ancho del logo */
+    height: 35px; /* Alto del logo */
+}
+.navbar .nav-link {
+    color: var(--color-azul-oscuro); /* Color de los enlaces del navbar */
+    font-weight: bold; /* Negrita para los enlaces */
+    margin-right: 20px; /* Espacio entre los enlaces */
+}
+.navbar .nav-link:hover {
+    color: var(--color-verde-oscuro); /* Cambia el color al pasar el mouse */
+    text-decoration: none; /* Elimina el subrayado al pasar el mouse */
+}
+.navbar .nav-link.active {
+    color: var(--color-verde-claro); /* Color del enlace activo */
+}
+
+/*** --- ESTILOS GENERALES PARA EL APARTADO DE INICIO --- ***/
+
+#carouselExampleIndicators {
+    height: 1000px; /* Altura fija del carrusel */
+}
+
+#carouselExampleIndicators .carousel-item {
+    height: 1000px; /* Establece una altura igual al contenedor  */
+}
+
+#carouselExampleIndicators video {
+    height: 100%; 
+    width: 100%;
+    object-fit: cover; /* Ajusta el video sin deformarlo */
+}
+
+#carouselExampleIndicators {
+    height: 100vh; /* 100% del alto de la pantalla */
+}
+
+#carouselExampleIndicators .carousel-item {
+    height: 100vh; /* Igual que el contenedor */
+}
+
+#carouselExampleIndicators video {
+    height: 100%; /* Altura completa del contenedor */
+    width: 100%; /* Ancho completo del contenedor */
+    object-fit: cover; /* Ajusta el video sin deformarlo */
+}
+
+.info-contact {
+    text-align: center; /* Centra el título */
+    color: var(--color-azul-oscuro); /* Color del texto */
+    font-size: 2.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Negrita para el texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+}
+
+/* -- Estilos para el card-mis el card-vis el card-val los tres se encuentren en columnas uno a la izquierda otro al centro y otro a la derecha --*/
+.card-mis, .card-vis, .card-val {
+    display: inline-block;
+    vertical-align: top;
+    width: 32%; /* Ajusta el ancho según sea necesario */
+    margin-right: 1%; /* Espacio entre las columnas */
+    text-align: justify; /* Justifica el texto dentro de cada card */
+    border-bottom: 2px solid var(--color-verde-oscuro) !important; /* Agrega un borde a cada card */
+
+}
+
+.cad-qsomos {
+    margin-bottom: 30px; /* Espacio debajo del card */
+    border: none; /* Elimina los bordes del card */
+    border-radius: 0; /* Elimina el radio de los bordes */
+    border-bottom: 2px solid var(--color-verde-claro); /* Agrega un borde inferior */
+    text-align: justify; /* Justifica el texto dentro del card */
+}
+.card-mvv {
+    margin-bottom: 30px; /* Espacio debajo del card */
+    border: none; /* Elimina los bordes del card */
+    border-radius: 0; /* Elimina el radio de los bordes */
+}
+
+/*** --- ESTILOS GENERALES PARA EL APARTADO DE CONTACTO --- ***/
+
+.titulo-contacto .info-contact {
+    text-align: center; /* Centra el título */
+    margin-bottom: 30px; /* Espacio debajo del título */
+}
+
+/* Estilos para el formulario de contacto */
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea el formulario a la derecha */
+}
+
+/* Estilos para los campos de formulario */
+.form-control {
+    width: 500px; /* Ancho fijo para los campos de formulario */
+    max-width: 100%; /* Asegura que no se desborde en pantallas pequeñas */
+    border: none; /* Elimina los bordes de los campos */
+    border-bottom: 2px solid #ccc; /* Agrega un borde inferior */
+    border-radius: 0; /* Elimina el radio de los bordes */
+}
+
+.form-control:focus {
+    border-bottom-color: var(--color-azul-oscuro); /* Cambia el color del borde al enfocar */
+    box-shadow: none; /* Elimina el efecto de sombra al enfocar */
+}
+
+/* Estilos para el botón de envío */
+.btn-enviar{
+    border-color: var(--color-verde-claro); /* Color del borde */
+    color: var(--color-verde-claro); /* Color del texto */
+    background-color: transparent; /* Fondo transparente */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el hover */
+}
+
+.btn-enviar:hover {
+    background-color: var(--color-verde-claro); /* Fondo verde al hacer hover */
+    color: #fff; /* Color del texto blanco al hacer hover */
+    transition: all 0.3s ease; /* Transición suave para el hover */
+}
